@@ -8,7 +8,7 @@ Add Keys to Github account: https://docs.github.com/en/authentication/connecting
 
 Test SSH Connection: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection
 
-If using a private email on github, a commit email needs to be setup in order to push your commits to gihub. This link goes over setting a commit email: https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address
+If using a private email on github, a commit email needs to be setup in order to push your commits to Github. This link goes over setting a commit email: https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address
 
 If using a passphrase if preferred, this link goes over the steps to set it up:  https://docs.github.com/en/authentication/connecting-to-github-with-ssh/working-with-ssh-key-passphrases 
 
