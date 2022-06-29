@@ -1,7 +1,8 @@
 If credentials were pushed to a remote repository like Github, the following steps can be used to removed those credentials from the commit history after they have been removed from the current commit: 
-1 First the pushed credentials must be discarded and replaced with new ones and any components that use should be upgraded accordingly, anybody affected by this issue must benotified right away.
 
-2 This next step outlines how to removed the credentials from the commit history: 
+1 First the pushed credentials must be discarded and replaced with new ones and any components that use should be upgraded accordingly, anybody affected must be notified right away.
+
+2 This next step outlines how to remove the credentials from the commit history: 
 
 a - Checkout a new branch
 
