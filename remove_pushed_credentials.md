@@ -8,31 +8,33 @@ a - Checkout a new branch
 
 git checkout --orphan latest_branch
 
-b- Add all the files
+b - Add all the files
 
 git add -A
 
-c- Commit the changes
+c - Commit the changes
 
 git commit -am "commit message"
 
-d- Delete the branch
+d - Delete the branch
 
 git branch -D main
 
-e- Rename the current branch to main
+e - Rename the current branch to main
 
 git branch -m main
 
-f- Finally, force update your repository
+f - Finally, force update your repository
 
 git push -f origin main
 
-3-If credentials were pushed using branches other than the main branch, do the following:
+3 -If credentials were pushed using branches other than the main branch, do the following:
 
-a- Delete the branch remotely:  git push -d <remote_name_aka_ssh_or_https_link> <branchname>
-b- Delete branch locally from a different branch or main branch: git branch -d <branchname>
-c- If  the old branch is recreated using git checkout -b <branchname> and pushed using git push, it will not have any previous commit history that contained the credentials.
+a - Delete the branch remotely:  git push -d <remote_name_aka_ssh_or_https_link> <branchname>
+  
+b - Delete branch locally from a different branch or main branch: git branch -d <branchname>
+  
+c - If  the old branch is recreated using git checkout -b <branchname> and pushed using git push, it will not have any previous commit history that contained the credentials.
 
-4- Here are some links for more details on these steps:
+4 - Here are some links for more details on these steps:
 https://stackoverflow.com/questions/13716658/how-to-delete-all-commit-history-in-githubhttps://stackoverflow.com/questions/2003505/how-do-i-delete-a-git-branch-locally-and-remotely 
