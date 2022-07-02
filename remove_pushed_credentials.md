@@ -4,11 +4,11 @@ If credentials were pushed to a remote repository like Github, the following ste
 
 2 - Second, the following steps can be used to remove the credentials from the commit history: 
 
-  a - Checkout a new branch
+    a - Checkout a new branch
 
 git checkout --orphan latest_branch
 
-  b - Add all the files
+    b - Add all the files
 
 git add -A
 
