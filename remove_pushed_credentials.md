@@ -38,7 +38,7 @@ If credentials were pushed to a remote repository like Github, the following ste
   
         git branch -d <branchname>
   
-  c - If  the old branch is recreated using **git checkout -b ** **<branchname>** and pushed using **git push**, it will not have any previous commit history that contained the credentials.
+  c - If  the old branch is recreated using _git checkout -b <branchname>_ and pushed using _git push_, it will not have any previous commit history that contained the credentials.
 
 4 - Here are some links for more details on these steps:
 https://stackoverflow.com/questions/13716658/how-to-delete-all-commit-history-in-githubhttps://stackoverflow.com/questions/2003505/how-do-i-delete-a-git-branch-locally-and-remotely 
