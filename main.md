@@ -1,4 +1,4 @@
-This file's content is focused on making it easy and secured to connect to github. 
+This file's content is focused on making connecting to github easy and secured.  
 
 Using SSH is the easiest and most secure way to connect to Github (clone, push,...). To do so, SSH keys must be created and added locally and to Github (only the public key is added to github, NOT THE PRIVATE KEY! For more on how ssh keys work, see this [video](https://www.youtube.com/watch?v=y2SWzw9D4RA) and for how PKI works see this [video)](https://www.youtube.com/watch?v=FCf5LIJ0HWE)). With this option, there's no need to remember a passphrase or having to use a username and personal access token (PAT):
 
