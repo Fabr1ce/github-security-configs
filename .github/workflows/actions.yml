@@ -23,11 +23,14 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
-        with:
-          python-version: '3.10' 
-      - run: python spell_check.py
-
-      # Runs a single command using the runners shell
+      # - uses: actions/setup-python@v4
+      #   with:
+      #     python-version: '3.10'
+      # - run: pip install pip install pyspellchecker
+      # - run: python3 spell_check.py
+      - name: Install aspell
+      - run: sudo apt-get install -y aspell
       - name: Run a one-line script
-        run: echo Test Complete!
+        run:  chmod +x spell_check.sh
+      - name: Spell Check
+        run: ./spell_check.sh
