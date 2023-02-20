@@ -16,7 +16,7 @@
 import language_tool_python
 tool = language_tool_python.LanguageTool('en-US')
 
-text = "word.txt"
+text = "word txt"
 
 # get the matches
 matches = tool.check(text)
