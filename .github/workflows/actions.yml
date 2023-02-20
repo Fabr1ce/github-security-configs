@@ -32,4 +32,5 @@ jobs:
       - run: sudo apt-get install -y aspell
       - name: Run a one-line script
         run:  chmod +x spell_check.sh
+      - name: Spell Check
         run: ./spell_check.sh
