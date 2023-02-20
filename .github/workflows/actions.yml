@@ -29,7 +29,7 @@ jobs:
       # - run: pip install pip install pyspellchecker
       # - run: python3 spell_check.py
       - name: Install aspell
-      - run: sudo apt-get install -y aspell
+        run: sudo apt-get install -y aspell
       - name: Run a one-line script
         run:  chmod +x spell_check.sh
       - name: Spell Check
