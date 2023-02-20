@@ -28,6 +28,7 @@ jobs:
           python-version: '3.10' 
       # - run: pip install --upgrade language-check
       # - run: python3 spell_check.py
+      - run: apt-get install -y aspell
       - run: aspell check adding_a_gitignore_file.md
       # Runs a single command using the runners shell
       - name: Run a one-line script
