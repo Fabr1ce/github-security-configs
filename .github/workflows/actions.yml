@@ -33,4 +33,4 @@ jobs:
       - name: Run a one-line script
         run:  chmod +x spell_check.sh
       - name: Spell Check
-        run: ./spell_check.sh
+        run: bin/bash -c ./spell_check.sh
