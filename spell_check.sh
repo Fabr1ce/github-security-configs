@@ -2,5 +2,6 @@
 
 echo "Start spell check"
 # aspell check README.md
-printf "\n" ispell README.md -v
+# printf "\n" ispell README.md
+ispell README.md
 # ispell README.md
