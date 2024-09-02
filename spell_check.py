@@ -1,24 +1,33 @@
-# from spellchecker import SpellChecker
-#
-# spell = SpellChecker()
-#
-# # find those words that may be misspelled
-# misspelled = spell.unknown(["cmputr", "watr", "study", "wrte"])
-# # misspelled = spell.unknown('words.txt')
-#
-# for word in misspelled:
-# 	# Get the one `most likely` answer
-# 	print(spell.correction(word))
-#
-# 	# Get a list of `likely` options
-# 	print(spell.candidates(word))
+import os
+from spellchecker import SpellChecker
 
-import language_tool_python
-tool = language_tool_python.LanguageTool('en-US')
+def check_spelling_in_file(file_path, spell_checker):
+    with open(file_path, 'r', encoding='utf-8', errors='ignore') as file:
+        content = file.read()
+    
+    words = content.split()
+    misspelled = spell_checker.unknown(words)
+    
+    if misspelled:
+        print(f"Misspelled words in {file_path}:")
+        for word in misspelled:
+            print(f" - {word}")
+        print()
 
-text = "word txt"
+def check_spelling_in_repo(repo_path):
+    spell_checker = SpellChecker()
 
-# get the matches
-matches = tool.check(text)
+    # Excluded from spell checking
+    spell_checker.word_frequency.add("id,")
+    spell_checker.word_frequency.add("github")
+    
+    for root, _, files in os.walk(repo_path):
+        for file in files:
+            file_path = os.path.join(root, file)
+            # Check only text files
+            if file_path.endswith(('.txt', '.md', '.py', '.html', '.css', '.js')):
+                check_spelling_in_file(file_path, spell_checker)
 
-matches
+if __name__ == "__main__":
+    repo_path = input("Enter the path to the repository: ")
+    check_spelling_in_repo(repo_path)
